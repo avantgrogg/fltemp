@@ -3,19 +3,24 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 h1 {
-  font-family: "museo-slab";
+  font-family: "ratio";
 }
 h2{
-  font-family: "chunk";
-  font-weight: bold;
+  font-family: "museo-slab";
+  font-weight: 500;
+
 }
 h3{
-	font-family: "chunk";
+	font-family: "museo-slab";
+	font-weight: 500;
+}
+h4{
+	font-family: "ratio";
 }
 input{
 	text-align: center;
-	font-family: "chunk";
-	font-weight: bold;
+	font-family: "museo-slab";
+	font-weight: 500;
 }
 body{
 	background-image: url('background.jpg');
@@ -57,14 +62,16 @@ h2{
 }
 h3{
 	color: #fff;
+	font-size: 20px;
 }
 h4{
 	color: #7dcdf1;
+	font-size: 14px;
 }
 #email input{
 	color: #fff;
 	background-color: #000;
-	font-size: 25px;
+	font-size: 32px;
 	font-weight: bold;
 	height: 70px;
 	width: 360px;
@@ -73,9 +80,15 @@ h4{
 #submit input{
 	margin-top: 20px;
 	width: 148px;
-	height: 40px;
+	height: 50px;
 	background-color: #499337;
 	color: #fff;
-	font-size: 26px;
-	border: 1px solid #aec56a
+	font-size: 32px;
+	border: 1px solid #aec56a;
+	font-family: "museo-slab";
+	font-weight: 500;
+}
+#submit input:hover{
+	border-color: #00ff06;
+	border-width: 1px;
 }
