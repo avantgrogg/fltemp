@@ -22,25 +22,36 @@ input{
 	font-family: "museo-slab";
 	font-weight: 500;
 }
+input::-webkit-input-placeholder {
+	text-align: center;
+	color: #fff;
+	margin-left: 50px;
+}
+
+input:-moz-placeholder {
+	text-align: center;
+	color: #fff;
+}
 body{
 	background-image: url('background.jpg');
 	background-size: 100%;
-	height: 700px;
+	height: 550px;
 	text-align: center;
 }
 #wrapper{
 	width: 401px;
-	height: 500px;
 	margin: 0 auto;
 	padding: 0px;
 	text-align: center;
 }
 #container{
-	height: 575px;
 	width: 401px;
 	background-color: #1c2b39;
 	border-radius: 5px;
 	margin-top: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
 }
 #container img{
 	margin-top: -9.56px;
@@ -81,13 +92,12 @@ h4{
 #submit input{
 	margin-top: 20px;
 	width: 148px;
-	height: 50px;
 	background-color: #499337;
 	color: #fff;
 	font-size: 32px;
+	font-weight: bold;
 	border: 1px solid #aec56a;
 	font-family: "museo-slab";
-	font-weight: 500;
 }
 #submit input:hover{
 	border-color: #00ff06;

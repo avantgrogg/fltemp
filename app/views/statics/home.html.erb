@@ -1,7 +1,15 @@
 <%= image_tag('logo.png') %>
-<h1>FORGETLINES</h1>
+<%= image_tag('forgetlines.png') %>
 <h2>Coming Soon 2012</h2>
+<div id="email_form">
+<% if cookies[:submitted].nil? %>
 <h3>Enter your email below and prepare to have your belt unbuckled.</h3>
 <h4>(Or...maybe you'll just be added to the mailing list)</h4>
-<div id="email"><input type="text" placeholder="enter email"/></div>
-<div id="submit"><input type="submit" value="lets go."/></div>
+<%= form_tag("/statics/addemail", :remote => true) do %>
+	<div id="email"><input type="text" placeholder="enter email" id="email_input" name='visitor[email]'/></div>
+	<div id="submit"><input type="submit" value="lets go."/></div>
+<% end %>
+<% else %>
+<h3>I thought I told you to get the eff out of here.</h3>
+<% end %>
+</div>
