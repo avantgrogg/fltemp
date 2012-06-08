@@ -15,6 +15,11 @@ Fltemp::Application.configure do
 
   # Don't care if the mailer can't send
   config.action_mailer.raise_delivery_errors = false
+  
+  #Configure Actionmailer to use postmark
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.delivery_method = :simple_postmark
+  config.action_mailer.simple_postmark_settings = { api_key: '61339e51-a8df-49b1-b838-d5d827fbfe74' }
 
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log

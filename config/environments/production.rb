@@ -19,6 +19,11 @@ Fltemp::Application.configure do
 
   # Generate digests for assets URLs
   config.assets.digest = true
+  
+  #Configure Actionmailer to use postmark
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.delivery_method = :simple_postmark
+  config.action_mailer.simple_postmark_settings = { api_key: '61339e51-a8df-49b1-b838-d5d827fbfe74' }
 
   # Defaults to Rails.root.join("public/assets")
   # config.assets.manifest = YOUR_PATH
