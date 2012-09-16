@@ -1,11 +1,11 @@
 require "bundler/capistrano"
 
 set :application, "forgetlines.com"
-set :repository,  "https://github.com/forgetlines/fltemp.git/trunk"
+set :repository,  "https://github.com/forgetlines/fltemp.git"
 set :rvm_ruby_string, 'ruby-1.9.3-p194@fltemp'
 set :rvm_type, :user
 
-set :scm, :git
+set :scm, :subversion
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
 role :web, "forgetlines.com"                          # Your HTTP server, Apache/etc
