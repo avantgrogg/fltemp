@@ -5,7 +5,7 @@ set :repository,  "https://github.com/forgetlines/fltemp.git/trunk"
 set :rvm_ruby_string, 'ruby-1.9.3-p194@fltemp'
 set :rvm_type, :user
 
-set :scm, :subversion
+set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
 role :web, "forgetlines.com"                          # Your HTTP server, Apache/etc
