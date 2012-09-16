@@ -1,7 +1,7 @@
 require "bundler/capistrano"
 
 set :application, "forgetlines.com"
-set :repository,  "https://github.com/forgetlines/fltemp.git"
+set :repository,  "https://github.com/forgetlines/fltemp.git/trunk"
 set :rvm_ruby_string, 'ruby-1.9.3-p194@fltemp'
 set :rvm_type, :user
 
